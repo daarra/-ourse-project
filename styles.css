@@ -178,3 +178,15 @@ img {
   top: 44px;
   background: url('img/1.png');
 }
+.btn-custom {
+  background-color: #e98c53;
+  color: white; /* Цвет текста на кнопке */
+}
+@media (max-width: 768px) {
+  .carousel-caption h1,
+  .carousel-caption p,
+  .carousel-caption a {
+    font-size: 14px;
+    margin-bottom: 2px;
+  }
+}
