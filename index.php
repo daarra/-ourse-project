@@ -32,8 +32,19 @@
           </li>
         </ul>
         <form class="d-flex">
-        <button class="btn btn-outline-success custom-btn" type="submit">Личный кабинет</button>
-        </form>
+          <?php
+          session_start();
+          if (!empty($_SESSION['a'])) {
+          ?>
+          <a href="profile.php"><button class="btn btn-custom" type="button">Личный кабинет</button></a>
+          <?php
+          } else {
+           ?>
+          <a href="signup.php"><button class="btn btn-custom" type="button">Войти в личный кабинет</button></a>
+        <?php
+        }
+        ?>
+      </form>
       </div>
     </div>
   </nav>
@@ -93,7 +104,6 @@
   <h2 class="featurette-heading">Добро пожаловать! <span class="text-muted">Вы попали в пространство data insights</span></h2>
   <p class="lead">На нашем сайте Вы сможете ознакомиться с некоторыми инструментами для работы с данными.</p>
 </div>
-
 
 
 <footer class="footer custom-bg-color">
