@@ -155,3 +155,26 @@ html, body {
 .active-link:hover {
   color: white;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.carousel-inner .desktop-1 {
+  position: relative;
+  width: 1838px;
+  height: 488px;
+  background: linear-gradient(180deg, #6A87B0 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.carousel-inner .desktop-1 .data-report {
+  position: absolute;
+  width: 450.3px;
+  height: 444px;
+  left: 1215px;
+  top: 44px;
+  background: url('img/1.png');
+}
