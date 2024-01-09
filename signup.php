@@ -50,13 +50,18 @@
   </nav>
 </header>
 
-<div class="text-center">
-  <h2 class="featurette-heading">Авторизируйтесь, чтобы попасть в личный кабинет</h2>
-  <p class="lead">Если Вы впервые оказались на нашем сайте, то, пожалуйста, пройдите регистрацию.</p>
-</div> 
-
+<div class="container mt-5">
   <div class="row justify-content-center">
-    <div class="col-lg-5">
+    <div class="col-lg-6">
+      <div class="text-center">
+        <h2 class="featurette-heading">Авторизируйтесь, чтобы попасть в личный кабинет</h2>
+        <p class="lead">Если Вы впервые оказались на нашем сайте, то, пожалуйста, пройдите регистрацию.</p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
       <form method="POST" action="auth.php">
         <div class="form-group">
           <label for="login">Логин</label>
@@ -76,6 +81,7 @@
     </div>
   </div>
 </div>
+
 
 
 
