@@ -94,6 +94,7 @@ body {
 
 .custom-bg-color {
   background-color: #6A87B0;
+  color: white;
 }
 
 .custom-btn {
@@ -145,4 +146,12 @@ html, body {
 
 .footer {
   flex-shrink: 0;
+}
+
+.active-link {
+  color: white;
+  text-decoration: underline;
+}
+.active-link:hover {
+  color: white;
 }

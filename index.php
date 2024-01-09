@@ -47,10 +47,11 @@
 </div>
 
 
-<footer class="footer">
+<footer class="footer custom-bg-color">
   <div class="container">
-    <p class="text-end"><a href="#">Вернуться наверх</a></p>
-    <p>&copy; 2023, data insights &middot; <a href="#">Конфиденциальность</a> &middot; <a href="#">Условия</a></p>
+  <p class="text-end"><a href="#" class="active-link">Вернуться наверх</a></p>
+    <p class="mb-0">&copy; <script>document.write(new Date().getFullYear());</script> , data insights</p>
+    <p class="mb-0">Для приложения были использованные данные, предоставленные порталом: https://ai.mos.ru/</p>
   </div>
 </footer>
 
