@@ -22,7 +22,7 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+            <a class="nav-link active" aria-current="page" href="index.php">Главная</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="#">Инструменты</a>
@@ -64,26 +64,28 @@
     <div class="col-lg-6">
       <form method="POST" action="auth.php">
         <div class="form-group">
-          <label for="login">Логин</label>
+          <label for="login" class="lead">Логин</label>
           <input type="text" class="form-control" id="login" name="login" style="border-radius: 0;">
         </div>
         
         <div class="form-group">
-          <label for="password">Пароль</label>
+          <label for="password" class="lead">Пароль</label>
           <input type="password" class="form-control" id="password" name="password" style="border-radius: 0;">
         </div>
         
-        <div>
-          <button type="submit" class="btn btn-primary" style="border-radius: 0;">Войти</button>
-          <a href="signup.php" style="margin-left: 10px;">Регистрация</a>
+        <div class="text-center mt-4">
+         <div class="d-block">
+          <button type="submit" class="btn btn-custom btn-lg rounded-1">Войти в профиль</button>
+         </div>
+          <div class="d-block mt-4">
+            <a href="signup.php" class="btn btn-custom1 btn-lg rounded-1">Регистрация</a>
+          </div>
         </div>
+
       </form>
     </div>
   </div>
 </div>
-
-
-
 
 <?php
 require("connectdb.php");
@@ -109,25 +111,4 @@ if (!empty($_POST)) {
     header("Location: user.php?id=" . $_SESSION["user"]["id"]);
 }
 
-$title = "Регистрация";
-$content = "
-<form method=\"POST\">
-  <div class=\"form-group\">
-    <label for=\"name\">ФИО</label>
-    <input type=\"text\" class=\"form-control\" id=\"name\" name=\"name\">
-  </div>
-  
-  <div class=\"form-group\">
-    <label for=\"login\">Логин</label>
-    <input type=\"text\" class=\"form-control\" id=\"login\" name=\"login\">
-  </div>
-  
-  <div class=\"form-group\">
-    <label for=\"password\">Пароль</label>
-    <input type=\"password\" class=\"form-control\" id=\"password\" name=\"password\">
-  </div>
-  
-  <button type=\"submit\" class=\"btn btn-primary\">Регистрация</button>
-</form>
-";
 ?>

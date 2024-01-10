@@ -182,6 +182,11 @@ img {
   background-color: #e98c53;
   color: white; /* Цвет текста на кнопке */
 }
+
+.btn-custom1 {
+  background-color: #6A87B0;
+  color: white; /* Цвет текста на кнопке */
+}
 @media (max-width: 768px) {
   .carousel-caption h1,
   .carousel-caption p,
