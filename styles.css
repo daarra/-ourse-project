@@ -180,8 +180,13 @@ img {
 }
 .btn-custom {
   background-color: #e98c53;
-  color: white; /* Цвет текста на кнопке */
+  color: white;
 }
+
+.btn-custom:disabled {
+  color: white;
+}
+
 
 .btn-custom1 {
   background-color: #6A87B0;
