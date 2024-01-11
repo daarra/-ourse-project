@@ -87,7 +87,7 @@
         <h1 class="mb-2">Для аналитики данных существует </h1>
         <p class="mb-1">множество инструментов, выбор которых зависит от конкретных потребностей.</p>
         <p class="mb-4">Мы предлагаем ознакомиться с некоторыми из них.</p>
-        <p><a class="btn btn-lg btn-custom" href="#">Инструменты</a></p>
+        <p><a class="btn btn-lg btn-custom" href="tools.php">Инструменты</a></p>
       </div>
     </div>
   </div>
@@ -110,14 +110,37 @@
 </div>
 
 
-<footer class="footer custom-bg-color">
-  <div class="container">
-  <p class="text-end"><a href="#" class="active-link">Вернуться наверх</a></p>
-    <p class="mb-0">&copy; <script>document.write(new Date().getFullYear());</script> , data insights</p>
-    <p class="mb-0">Для приложения были использованные данные, предоставленные порталом: https://ai.mos.ru/</p>
-  </div>
+<footer class="footer text-center custom-bg-color">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="mb-4">Контакты</h4>
+                <p class="lead mb-0">
+                    <strong>Данилкина Дарья Александровна</strong> <br>
+                    d.a.danilkina@stud.mospolytech.ru
+                </p>
+            </div>
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <h4 class="mb-4">Наше сообщество</h4>
+                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+            </div>
+            <div class="col-lg-4">
+                <h4 class="mb-4">Оставить обратную связь</h4>
+                <p class="lead mb-4">
+                    У вас есть предложения или вопросы?
+                </p>
+                <h4 class="mb-4">Вернуться в начало страницы</h4>
+            </div>
+        </div>
+    </div>
 </footer>
-
+<div class="copyright py-4 text-center text-white custom-bg-color1">
+    <p class="mb-0">&copy; <script>document.write(new Date().getFullYear());</script>, data insights</p>
+    <div class="container"><small>Для приложения были использованы данные, предоставленные порталом: <a href="https://ai.mos.ru/">https://ai.mos.ru/</a></small></div>
+</div>
 
 </main>
       

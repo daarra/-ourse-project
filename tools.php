@@ -60,15 +60,31 @@ $result = $connect->query($sql);
 // Вывод результатов
 if ($result->num_rows > 0) {
     while ($row = $result->fetch_assoc()) {
-        echo "ID: " . $row["id"] . "<br>";
-        echo "Title: " . $row["title"] . "<br>";
-        echo "Content: " . $row["content"] . "<br>";
-        echo "ID_user: " . $row["user_id"] . "<br>";
+        // Оформление контейнера каждой записи с отступом от хедера
+        echo "<div class=\"card mt-3\">";
+        echo "<div class=\"card-body\">";
+        
+        // Заголовок
+        echo "<h2 class=\"card-title\">" . $row["title"] . "</h2>";
+        
+        // Содержимое
+        echo "<p class=\"card-text\">" . $row["content"] . "</p>";
+        
+        // Ссылка на страницу с ID
+        echo "<a href=\"page.php?id=" . $row["id"] . "\" class=\"btn btn-primary\">";
+        echo "Author: " . $row["user_id"];
+        echo "</a>";
+        
+        echo "</div>";
+        echo "</div>";
+        
+        // Пустая строка для разделения записей
         echo "<br>";
     }
 } else {
     echo "No results found.";
 }
+
 
 $connect->close();
 

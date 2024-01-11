@@ -96,7 +96,10 @@ body {
   background-color: #6A87B0;
   color: white;
 }
-
+.custom-bg-color1 {
+  background-color: #456696;
+  color: white;
+}
 .custom-btn {
   border-color: #A1C084;
   color: white;
