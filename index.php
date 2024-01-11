@@ -122,10 +122,9 @@
             </div>
             <div class="col-lg-4 mb-5 mb-lg-0">
                 <h4 class="mb-4">Наше сообщество</h4>
-                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-facebook-f"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-linkedin-in"></i></a>
-                <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-dribbble"></i></a>
+                <a href="#!" class="btn  btn-social mx-1"><img src="img/f_logo.svg" alt="Facebook"></a>
+                <a href="#!" class="btn  btn-social mx-1"><img src="img/tw_logo.svg" alt="Twitter"></a>
+                <a href="#!" class="btn  btn-social mx-1"><img src="img/t_logo.svg" alt="Telegram"></a>
             </div>
             <div class="col-lg-4">
                 <h4 class="mb-4">Оставить обратную связь</h4>
