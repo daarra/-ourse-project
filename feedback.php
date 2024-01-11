@@ -49,65 +49,68 @@
     </div>
   </nav>
 </header>
-
 <main>
-<div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-<div class="carousel-indicators">
-   <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1" style="background-color: gray;"></button>
-   <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2" style="background-color: gray;"></button>
-   <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3" style="background-color: gray;"></button>
-</div>
-
-<div class="carousel-inner">
-  <div class="carousel-item active">
-  <img src="img/carousel_1.png" class="img-fluid d-none d-lg-block" alt="Фотография1-Большие устройства">
-    <img src="img/slide.png" class="img-fluid d-lg-none" alt="Фотография1-Маленькие устройства">
-    <div class="container">
-      <div class="carousel-caption text-start" style="color: gray;">
-        <h1 class="mb-2">Аналитика данных занимается</h1>
-        <p class="mb-4">большими данными, которые можно обрабатывать и анализировать с применением математического аппарата.</p>
+  <div class="container pt-2">
+    <div class="row justify-content-center">
+      <div class="col-lg-6">
+        <div class="text-center">
+          <h2 class="featurette-heading">Заполните форму для обратной связи</h2>
+        </div>
       </div>
     </div>
-  </div>
-  <div class="carousel-item">
-    <img src="img/slide.png" class="d-block w-100 d-md-none" alt="Фотография2-Маленькие устройства">
-    <img src="img/carousel_2.png" class="d-block w-100 d-md-block" alt="Фотография2-Большие устройства">
-    <div class="container">
-      <div class="carousel-caption" style="color: gray;">
-        <h1 class="mb-2">Аналитика данных применяется,</h1>
-        <p class="mb-4">когда нужно собрать, обработать и проанализировать значительный объем данных. Это помогает представить информацию в наглядном виде и сделать выводы.</p>
-      </div>
-    </div>
-  </div>
-  <div class="carousel-item">
-  <img src="img/carousel_3.png" class="img-fluid d-none d-lg-block" alt="Фотография1-Большие устройства">
-    <img src="img/slide.png" class="img-fluid d-lg-none" alt="Фотография1-Маленькие устройства">
-    <div class="container">
-      <div class="carousel-caption text-end" style="color: gray;">
-        <h1 class="mb-2">Для аналитики данных существует </h1>
-        <p class="mb-1">множество инструментов, выбор которых зависит от конкретных потребностей.</p>
-        <p class="mb-4">Мы предлагаем ознакомиться с некоторыми из них.</p>
-        <p><a class="btn btn-lg btn-custom" href="tools.php">Инструменты</a></p>
-      </div>
-    </div>
-  </div>
+  
+  <div class="row justify-content-center">
+    <div class="col-lg-6">
+    <form name="log_in" action="process_form.php" enctype="multipart/form-data" method="post" class="form">
+        <div class="form-group">
+          <label for="name" class="lead">ФИО:</label>
+          <input type="text" class="form-control" id="name" name="name" style="border-radius: 0;">
+        </div>
+
+        <div class="form-group">
+            <label for="email" class="lead">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" tyle="border-radius: 0;">
+        </div>
+
+        <div class="form-group">
+            <label class="form-label">Откуда узнали о нас:</label>
+            <div class="form-check">
+                <input type="radio" id="radio1" name="source" value="radio1" required class="form-check-input">
+                <label for="radio1" class="form-check-label">Реклама</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="radio2" name="source" value="radio2" required class="form-check-input">
+                <label for="radio2" class="form-check-label">Рекомендация</label>
+            </div>
+            <div class="form-check">
+                <input type="radio" id="radio3" name="source" value="radio3" required class="form-check-input">
+                <label for="radio3" class="form-check-label">СМИ</label>
+            </div>
+        </div>
+        
+        <div class="form-group">
+        <label for="type" class="form-label">Тип обращения:</label>
+            <select id="type" name="type" required class="form-select">
+                <option value="" selected disabled>Выберите тип</option>
+                <option value="complaint">Жалоба</option>
+                <option value="suggestion">Предложение</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+        <label for="message" class="form-label">Текст сообщения:</label>
+            <textarea id="message" name="message" rows="5" required class="form-control"></textarea>
+        </div>
+
+        <div class="mb-3 form-check">
+            <input type="checkbox" id="consent" name="consent" required class="form-check-input">
+            <label for="consent" class="form-check-label">Даю согласие на обработку персональных данных</label>
+        </div>
+
+        <button type="submit" class="btn btn-lg btn-custom">Отправить</button>
+    </form>
 </div>
-
-
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev" style="margin-right: 5px;">
-      <span class="carousel-control-prev-icon" aria-hidden="true" ></span>
-      <span class="visually-hidden" >Предыдущий</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next" style="margin-right: 5px;">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Следующий</span>
-    </button>
-  </div>
-
-<div class="text-center">
-  <h2 class="featurette-heading">Добро пожаловать! <span class="text-muted">Вы попали в пространство data insights</span></h2>
-  <p class="lead">На нашем сайте Вы сможете ознакомиться с некоторыми инструментами для работы с данными.</p>
-</div>
+</main>
 
 
 <footer class="footer text-center custom-bg-color mt-5 py-2 fixed-bottom">
@@ -140,8 +143,6 @@
     <div class="container"><small>Для приложения были использованы данные, предоставленные порталом: <a href="https://ai.mos.ru/">https://ai.mos.ru/</a></small></div>
 </div>
 </footer>
-
-</main>
       
   </body>
 </html>
