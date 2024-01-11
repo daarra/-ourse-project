@@ -10,7 +10,7 @@ $result = mysqli_query($connect, "SELECT * FROM users WHERE
 //echo md5($_POST["password"]);
 
 if(!$result || mysqli_num_rows($result) == 0){
-    header("Location: error_signup.php");
+    header("Location: error_signin.php");
     exit;
 }
 

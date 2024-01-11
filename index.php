@@ -40,7 +40,7 @@
           <?php
           } else {
            ?>
-          <a href="signup.php"><button class="btn btn-custom" type="button">Войти в личный кабинет</button></a>
+          <a href="signin.php"><button class="btn btn-custom" type="button">Войти в личный кабинет</button></a>
         <?php
         }
         ?>
