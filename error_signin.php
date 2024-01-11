@@ -65,12 +65,12 @@
       <form method="POST" action="auth.php">
         <div class="form-group">
           <label for="login" class="lead">Логин</label>
-          <input type="text" class="form-control" id="login" name="login" style="border-radius: 0;">
+          <input type="text" class="form-control" id="login" name="login" style="border-radius: 0;"  autocomplete="off">
         </div>
         
         <div class="form-group">
           <label for="password" class="lead">Пароль</label>
-          <input type="password" class="form-control" id="password" name="password" style="border-radius: 0;">
+          <input type="password" class="form-control" id="password" name="password" style="border-radius: 0;"  autocomplete="off">
         </div>
         
         <div class="text-center mt-4">

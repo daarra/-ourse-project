@@ -22,19 +22,19 @@
       <div class="collapse navbar-collapse" id="navbarCollapse">
         <ul class="navbar-nav me-auto mb-2 mb-md-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Главная</a>
+            <a class="nav-link active" aria-current="page" href="index.php">Главная</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Инструменты</a>
+            <a class="nav-link active" aria-current="page" href="tools.php">Инструменты</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Датасеты</a>
+            <a class="nav-link active" aria-current="page" href="data.php">Датасеты</a>
           </li>
         </ul>
         <form class="d-flex">
           <?php
           session_start();
-          if (!empty($_SESSION['a'])) {
+          if (!empty($_SESSION['user'])) {
           ?>
           <a href="profile.php"><button class="btn btn-custom" type="button">Личный кабинет</button></a>
           <?php
