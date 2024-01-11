@@ -74,6 +74,8 @@
         </div>
         
         <div class="text-center mt-4">
+        <div class="mt-3">
+      <p>Пользователя не существует. Пожалуйста, проверьте введенные данные и попробуйте снова.</p>
          <div class="d-block">
           <button type="submit" class="btn btn-custom btn-lg rounded-1">Войти в профиль</button>
          </div>
@@ -82,31 +84,9 @@
           </div>
         </div>
 
-      </form>
+        </form>
     </div>
   </div>
 </div>
 
-<?php
-require("connectdb.php");
-
-if(isset($_POST["login"]) && isset($_POST["password"])) { 
-    $result = mysqli_query($connect, "SELECT * FROM users WHERE login='".$_POST["login"]."' AND password='".md5($_POST["password"])."'
-    ");
-
-    //echo $_POST["login"];
-    //echo md5($_POST["password"]);
-
-    if(!$result || mysqli_num_rows($result) == 0){
-      header("Location: error_signup.php"); 
-      exit;
-    }    
-    
-    session_start();
-    $_SESSION["user"] = mysqli_fetch_assoc($result);
-
-    header("Location: user.php?id=".$_SESSION["user"]["id"]);
-    exit;
-}  
-?>
 

@@ -10,8 +10,8 @@ $result = mysqli_query($connect, "SELECT * FROM users WHERE
 //echo md5($_POST["password"]);
 
 if(!$result || mysqli_num_rows($result) == 0){
-	echo "Такой пользователь не существует.";
-	exit;
+    header("Location: error_signup.php");
+    exit;
 }
 
 session_start();
