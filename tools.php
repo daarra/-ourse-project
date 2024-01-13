@@ -41,5 +41,6 @@ $connect->close();
 
 ?>
     </main>
+    <?php require("./elements/footer.php") ?>
 </body>
 </html>

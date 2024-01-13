@@ -11,7 +11,7 @@
   </div>
   
   <div class="row justify-content-center">
-    <div class="col-lg-6">
+    <div class="col-lg-6" style="margin-top: 20px;">
       <form method="POST" action="./queries/auth.php">
         <div class="form-group">
           <label for="login" class="lead">Логин</label>

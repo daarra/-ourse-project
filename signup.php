@@ -10,7 +10,7 @@
   </div>
   
   <div class="row justify-content-center">
-    <div class="col-lg-6">
+    <div class="col-lg-6" style="margin-top: 20px;">
       <form method="POST" action="register.php">
         <div class="form-group">
           <label for="name" class="lead">ФИО</label>
@@ -31,6 +31,7 @@
           <div class="d-block">
             <a href="user.php" class="btn btn-custom1 btn-lg rounded-1">Зарегистироваться</a>
           </div>
+          <div style="margin-bottom: 30px;"></div>
         </div>
 
       </form>
