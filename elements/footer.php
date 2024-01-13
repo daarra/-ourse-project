@@ -1,4 +1,4 @@
-<footer class="footer text-center custom-bg-color mt-5 py-2 fixed-bottom">
+<footer class="footer text-center custom-bg-color mt-5 py-2">
     <div class="container">
         <div class="row">
             <div class="col-lg-4 mb-5 mb-lg-0">
@@ -28,8 +28,4 @@
     <div class="container"><small>Для приложения были использованы данные, предоставленные порталом: <a href="https://ai.mos.ru/">https://ai.mos.ru/</a></small></div>
 </div>
 </footer>
-
-</main>
       
-  </body>
-</html>

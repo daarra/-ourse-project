@@ -2,7 +2,7 @@
 <?php require("./elements/header.php") ?>
 <main>
     <?php
-require("connectdb.php");
+require("./queries/connectdb.php");
 
 // Выполнение запроса
 $sql = "SELECT * FROM pages";

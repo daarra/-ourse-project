@@ -17,8 +17,8 @@ $sql = "INSERT INTO formdata (name, email, source, type, message)
         VALUES ('$name', '$email', '$source', '$type', '$message')";
 
 if ($connect->query($sql) === TRUE) {
-    header("Location: success_page.php");
-    exit;
+    header("Location: ../success_page.php");
+    exit();    
 } else {
     echo "Ошибка: " . $sql . "<br>" . $connect->error;
 }

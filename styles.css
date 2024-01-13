@@ -203,3 +203,7 @@ img {
     margin-bottom: 2px;
   }
 }
+
+main {
+  margin-bottom: 100px; /* Замените 100px на необходимую высоту вашего футера */
+}

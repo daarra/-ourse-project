@@ -11,7 +11,7 @@
   
   <div class="row justify-content-center">
     <div class="col-lg-6">
-    <form name="log_in" action="process_form.php" enctype="multipart/form-data" method="post" class="form">
+    <form name="log_in" action="./queries/process_form.php" enctype="multipart/form-data" method="post" class="form">
         <div class="form-group">
           <label for="name" class="lead">ФИО:</label>
           <input type="text" class="form-control" id="name" name="name" style="border-radius: 0;">
@@ -61,6 +61,4 @@
     </form>
 </div>
 </main>
-
-
 <?php require("./elements/footer.php") ?>
