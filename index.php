@@ -67,8 +67,8 @@
 
 <div class="carousel-inner">
   <div class="carousel-item active">
-    <img src="img/invertslide.png" class="img-fluid" alt="Фотография1-Большие устройства">
-
+  <img src="img/2.png" class="img-fluid d-none d-lg-block" alt="Фотография1-Большие устройства">
+  <img src="img/invertslide.png" class="img-fluid d-lg-none" alt="Фотография1-Маленькие устройства">
   </div>
 </div>
 
