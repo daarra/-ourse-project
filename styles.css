@@ -106,7 +106,6 @@ body {
   border-color: #6A87B0;
 }
 
-
 .custom-navbar {
   padding-top: 15px; 
   padding-bottom: 15px;
@@ -204,6 +203,4 @@ img {
   }
 }
 
-main {
-  margin-bottom: 100px; /* Замените 100px на необходимую высоту вашего футера */
-}
+

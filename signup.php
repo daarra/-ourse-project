@@ -31,7 +31,7 @@
           <div class="d-block">
             <a href="user.php" class="btn btn-custom1 btn-lg rounded-1">Зарегистироваться</a>
           </div>
-          <div style="margin-bottom: 30px;"></div>
+          <div style="margin-bottom: 80px;"></div>
         </div>
 
       </form>

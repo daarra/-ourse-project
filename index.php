@@ -58,6 +58,14 @@
 <div class="text-center">
   <h2 class="featurette-heading">Добро пожаловать! <span class="text-muted">Вы попали в пространство data insights</span></h2>
   <p class="lead">На нашем сайте Вы сможете ознакомиться с некоторыми инструментами для работы с данными.</p>
+  <p class="lead">Мы предлагаем Вам возможность изучения и экспериментирования с данными, а также обмена опытом с другими специалистами в области.</p>
+</div>
+
+<div class="carousel-inner">
+  <div class="carousel-item active">
+    <img src="img/invertslide.png" class="img-fluid" alt="Фотография1-Большие устройства">
+
+  </div>
 </div>
 
 

@@ -37,6 +37,7 @@
           <div class="d-block mt-4">
             <a href="signup.php" class="btn btn-custom1 btn-lg rounded-1">Регистрация</a>
           </div>
+          <div style="margin-bottom: 70px;"></div>
         </div>
 
       </form>
