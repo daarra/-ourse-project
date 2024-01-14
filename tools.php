@@ -1,7 +1,20 @@
 <!-- HEADER -->
 <?php require("./elements/header.php") ?>
 <main>
-    <?php
+
+<div class="carousel-inner">
+  <div class="carousel-item active">
+  <img src="img/tools.png" class="img-fluid d-none d-lg-block" alt="Фотография1-Большие устройства">
+    <img src="img/slide.png" class="img-fluid d-lg-none" alt="Фотография1-Маленькие устройства">
+    <div class="container">
+      <div class="carousel-caption text-start" style="color: grey;">
+        <h1 class="mb-2">Этот раздел предназначен для ознакомления с информацией об инструментах для работы с данными.</h1>
+        <p class="mb-4">Если у Вас останутся вопросы по изложенному материалу, то будем рады ответить на них в комментариях к статье.</p>
+      </div>
+    </div>
+  </div>
+  </main>
+<?php
 require("./queries/connectdb.php");
 
 // Выполнение запроса
@@ -40,7 +53,7 @@ if ($result->num_rows > 0) {
 $connect->close();
 
 ?>
-    </main>
+
     <?php require("./elements/footer.php") ?>
 </body>
 </html>

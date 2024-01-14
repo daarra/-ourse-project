@@ -7,7 +7,7 @@
           <h2 class="featurette-heading">Ваша заявка отправлена. Спасибо! </h2>
         </div>
       </div>
-      <div style="margin-bottom: 360px;"></div>
+      <div style="margin-bottom: 460px;"></div>
     </div>
   
 </main>

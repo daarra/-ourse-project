@@ -58,6 +58,7 @@
         </div>
 
         <button type="submit" class="btn btn-lg btn-custom">Отправить</button>
+        <div style="margin-bottom: 10px;"></div>
     </form>
 </div>
 </main>
