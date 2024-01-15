@@ -32,11 +32,11 @@ if ($result->num_rows > 0) {
         echo "<h2 class=\"card-title\">" . $row["title"] . "</h2>";
         
         // Содержимое
-        echo "<p class=\"card-text\">" . $row["content"] . "</p>";
+        echo "<p class=\"card-text\">" . $row["brief"] . "</p>";
         
         // Ссылка на страницу с ID
-        echo "<a href=\"page.php?id=" . $row["id"] . "\" class=\"btn btn-primary\">";
-        echo "Author: " . $row["user_id"];
+        echo "<a href=\"page.php?id=" . $row["id"] . "\" class=\"btn btn-custom\">";
+        echo "Перейти к статье";
         echo "</a>";
         
         echo "</div>";
