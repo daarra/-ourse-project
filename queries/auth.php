@@ -2,15 +2,13 @@
 require("connectdb.php");
 require("session.php");
 
-$result = mysqli_query($connect, "SELECT * FROM users WHERE
-    login='".$_POST["login"]."' AND
-    password='".md5($_POST["password"])."'
-");
+// Подготовка запроса SELECT с подстановкой параметров
+$stmt = mysqli_prepare($connect, "SELECT * FROM users WHERE login=? AND password=?");
+mysqli_stmt_bind_param($stmt, "ss", $_POST["login"], md5($_POST["password"]));
+mysqli_stmt_execute($stmt);
+$result = mysqli_stmt_get_result($stmt);
 
-//echo $_POST["login"];
-//echo md5($_POST["password"]);
-
-if(!$result || mysqli_num_rows($result) == 0){
+if (!$result || mysqli_num_rows($result) == 0) {
     header("Location: ../signin.php?error=1");
     exit;
 }
@@ -18,6 +16,6 @@ if(!$result || mysqli_num_rows($result) == 0){
 session_start();
 $_SESSION["user"] = mysqli_fetch_assoc($result);
 
-header("Location: ../profile.php?id=".$_SESSION["user"]["id"]);
+header("Location: ../index.php?id=".$_SESSION["user"]["id"]);
 
 ?>

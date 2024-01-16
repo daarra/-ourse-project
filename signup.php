@@ -11,7 +11,7 @@
   
   <div class="row justify-content-center">
     <div class="col-lg-6" style="margin-top: 20px;">
-      <form method="POST" action="register.php">
+      <form method="POST" action="./queries/register.php">
         <div class="form-group">
           <label for="name" class="lead">ФИО</label>
           <input type="text" class="form-control" id="name" name="name" style="border-radius: 0;">
@@ -27,9 +27,15 @@
           <input type="password" class="form-control" id="password" name="password" style="border-radius: 0;">
         </div>
         
+        <?php
+            if (isset($_GET['error']) && $_GET['error'] == 1) {
+                echo '<div class="error-message"><p>Пользователь с таким логином уже существует. Придумайте другой логин.</p></div>';
+            }
+            ?>
+
         <div class="text-center mt-4">
           <div class="d-block">
-            <a href="user.php" class="btn btn-custom1 btn-lg rounded-1">Зарегистироваться</a>
+          <button type="submit" class="btn btn-custom btn-lg rounded-1">Зарегистироваться</button>
           </div>
           <div style="margin-bottom: 80px;"></div>
         </div>
