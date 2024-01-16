@@ -22,7 +22,8 @@ require("./queries/session.php");
         <div class="featurette text-center">
             <h2 class="featurette-heading">Авторизировано</h2>
             <p class="lead">Вы можете просматривать содержимое страницы для авторизированных пользователей.</p>
-        </div>
+            <?php require("./queries/view.php"); ?>
+        </div> <div style="margin-bottom: 20px;"></div>
     </div>
     <?php
     } else {
