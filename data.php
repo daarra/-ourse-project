@@ -16,11 +16,11 @@ require("./queries/session.php");
 <main>
 <?php
     // Проверяем, авторизован ли пользователь
-    if(isset($_SESSION["user"]) && $_SESSION["user"]["role_id"] > 1) {
+    if(isset($_SESSION["user"]) && $_SESSION["user"]["role_id"] > 2) {
     ?>
     <div class="container">
         <div class="featurette text-center">
-            <h2 class="featurette-heading">Авторизировано</h2>
+            <h2 class="featurette-heading">Датасет "Визиты пользователь на портал mos.ru"</h2>
             <p class="lead">Вы можете просматривать содержимое страницы для авторизированных пользователей.</p>
             <?php require("./queries/view.php"); ?>
         </div> <div style="margin-bottom: 20px;"></div>
