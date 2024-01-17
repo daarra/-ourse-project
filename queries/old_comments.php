@@ -9,15 +9,22 @@ $stmt = $connect->prepare($query);
 $stmt->bind_param('i', $pageId);
 $stmt->execute();
 $result = $stmt->get_result();
+?>
 
-// Отображение комментариев на странице
-while ($row = $result->fetch_assoc()) {
-    echo "<div class='comment'>";
-    echo "<p class='comment-name'>" . $row['username'] . "</p>";
-    echo "<p class='comment-text'>" . $row['text'] . "</p>";
-    echo "</div>";
-}
+<div class="container-md  style="max-width: 20rem;>
+  <?php
+  while ($row = $result->fetch_assoc()) {
+    echo '<div class="card comment mb-3">';
+    echo '<div class="card-body p-2">';
+    echo '<h5 class="card-title">' . $row['username'] . '</h5>';
+    echo '<p class="lead">' . $row['text'] . '</p>';
+    echo '</div>';
+    echo '</div>';
+  }
+  ?>
+</div>
 
+<?php
 $stmt->close();
 $connect->close();
 ?>
