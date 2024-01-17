@@ -21,8 +21,29 @@ require("./queries/session.php");
     <div class="container">
         <div class="featurette text-center">
             <h2 class="featurette-heading">Датасет "Визиты пользователь на портал mos.ru"</h2>
-            <p class="lead">Вы можете просматривать содержимое страницы для авторизированных пользователей.</p>
+            <p class="lead">Данные о визитах пользователей на портал mos.ru. В рамках одного визита пользователь может производить несколько просмотров (ограничение – 500 просмотров). Каждая запись в датасете – характеристика одного визита на портал</p>
+            <p class="lead">Так как данные представлены в текстовом формате, их необходимо перед кластеризацией перенести в технические числовые метки. Вы можете воспользоваться кнопкой "Сменить формат метки", чтобы посмотреть как выглядит датасет после обработки</p>
             <?php require("./queries/view.php"); ?>
+            <p class="lead">Теперь попробуем провести кластеризацию данных, используя алгоритм k-means. За атрибуты будем брать время посещения пользователя на портале, количество просмотренных страниц и страницу входа</p>
+            <p class="lead">Получаем следующий результат:</p>
+            <div class="row">
+  <div class="col-md-6">
+    <figure>
+      <img src="/img/k-means-15.png" alt="Изображение 1" class="img-fluid">
+      <figcaption>Кластеризация на 15 кластеров</figcaption>
+    </figure>
+  </div>
+  <div class="col-md-6">
+    <figure>
+      <img src="/img/k_means-8.png" alt="Изображение 2" class="img-fluid">
+      <figcaption>Кластеризация на 8 кластеров</figcaption>
+    </figure>
+  </div>
+
+</div>
+
+<?php require("./queries/centroids.php"); ?>
+<button id="load-more-btn" class="btn btn-custom">Поменять метки</button>
         </div> <div style="margin-bottom: 20px;"></div>
     </div>
     <?php

@@ -13,7 +13,7 @@
   <body>
     
 <header>
-<nav class="navbar navbar-expand-xl navbar-dark fixed-top custom-bg-color custom-navbar">
+<nav class="navbar navbar-expand-xl navbar-dark fixed-top custom-bg-color custom-navbar mb-md-8">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">data insights</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Переключить навигацию">
@@ -46,6 +46,6 @@
         ?>
       </form>
       </div>
-    </div>
+    </div> 
   </nav>
 </header>

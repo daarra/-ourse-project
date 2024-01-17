@@ -232,3 +232,14 @@ img {
 .data-cell:hover {
   background-color: #f9f9f9;
 }
+@media (max-width: 767px) { /* Применяется только на устройствах с максимальной шириной 767px (маленькие устройства) */
+  .header {
+     margin-top: 20px; /* Задаёт отступ сверху */
+  }
+}
+
+#load-more-btn {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
