@@ -33,28 +33,29 @@ require("./queries/session.php");
       <figcaption>Кластеризация на 15 кластеров</figcaption>
     </figure>
   </div>
-  <div class="col-md-6">
-    <figure>
-      <img src="/img/k_means-8.png" alt="Изображение 2" class="img-fluid">
-      <figcaption>Кластеризация на 8 кластеров</figcaption>
-    </figure>
-  </div>
-
-</div>
-
-<?php require("./queries/centroids.php"); ?>
-<button id="load-more-btn" class="btn btn-custom">Поменять метки</button>
-        </div> <div style="margin-bottom: 20px;"></div>
+    <div class="col-md-6">
+      <figure>
+        <img src="/img/k_means-8.png" alt="Изображение 2" class="img-fluid">
+        <figcaption>Кластеризация на 8 кластеров</figcaption>
+      </figure>
     </div>
-    <?php
-    } else {
-        echo '<div class="container">';
-        echo '<div class="featurette text-center">';
-        echo '<h2 class="featurette-heading">Вам отказано в доступе</h2>';
-        echo '</div>';
-        echo '</div>';
-    }
-    ?>
+
+    </div>
+
+    <?php require("./queries/centroids.php"); ?>
+    <p class="lead">Проанализируем значения, которые мы получили в процессе кластеризации:</p>
+    <?php require("./queries/segment_cent.php"); ?>
+          </div> <div style="margin-bottom: 20px;"></div>
+      </div>
+      <?php
+      } else {
+          echo '<div class="container">';
+          echo '<div class="featurette text-center">';
+          echo '<h2 class="featurette-heading">Вам отказано в доступе</h2>';
+          echo '</div>';
+          echo '</div>';
+      }
+      ?>
 </main>
 
 <?php require("./elements/footer.php"); ?>
