@@ -26,7 +26,7 @@
     <div style="margin-top: 20px;">
       <div class="row justify-content-center">
         <div class="col-md-4">
-        <a href="edit_profile.php" class="btn btn-lg btn-custom btn-block mt-3">Редактировать данные</a>
+
           <a href="./queries/logout.php" class="btn btn-lg btn-custom btn-block mt-3">Выйти из профиля</a>
         </div>
       </div>
